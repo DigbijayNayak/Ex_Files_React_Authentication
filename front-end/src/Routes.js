@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { UserInfoPage } from './pages/UserInfoPage';
 import LogInPage from './pages/LogInPage';
+import SignUpPage from './pages/SignUpPage';
 
 /**
  * The top-level routing component for the entire app.
@@ -33,6 +34,9 @@ export const Routes = () => {
                 </Route>
                 <Route path="/login" exact>
                     <LogInPage />
+                </Route>
+                <Route path="/signup">
+                    <SignUpPage />
                 </Route>
             </Switch>
         </Router>
